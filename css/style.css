@@ -1,1 +1,344 @@
-/* Ini CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font Style */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Header Style */
+header {
+    background-image: url(../assets/berat\ badan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border-bottom-left-radius: 170px;
+    border-bottom-right-radius: 170px;
+    background-attachment: scroll;
+    height: 450px;
+    padding: 100px 50px;
+}
+
+header h1 {
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+header p {
+    color: white;
+    width: 80%;
+    font-size: 0.8rem;
+}
+
+
+/* Main Style */
+main {
+    margin: 100px auto;
+    width: 80%;
+}
+
+main article h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+
+/* Keunggulan Fitur */
+main article ol {
+    margin-bottom: 80px;
+}
+
+main article ol li {
+    list-style-type: none;
+    padding: 20px;
+    background-color: rgb(0, 208, 255);
+    color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+/* Feature Animation */
+main article ol li:hover {
+    transform: scale(1.12);
+    transition: all .2s ease-in-out;
+}
+
+main article p.note {
+    line-height: 1.8rem;
+    font-size: 15px;
+}
+
+
+/* Form Style*/
+form {
+    margin: 70px auto;
+    width: 100%;
+}
+
+form div {
+    margin: 20px;
+}
+
+form .sex-option {
+    display: flex;
+    height: fit-content;
+}
+
+form .sex-option label {
+    width: 100%;
+}
+
+form .sex-option label .image {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+form .sex-option label .image img {
+    width: 40px;
+    margin: 15px auto;
+}
+
+
+/* Hide Radio  Button */
+input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* Image Style */
+input[type=radio] + .image {
+    cursor: pointer;
+}
+
+
+/* Checked Styles */
+input[type=radio]:checked + .image {
+    border: 1px solid blue;
+    box-shadow: 1px 1px 10px rgb(99, 99, 252);
+    border-radius: 3px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+button {
+    padding: 10px 23px;
+    border: 3px solid rgb(0, 208, 255);
+    background-color: rgb(0, 208, 255);
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 500;
+    margin-right: 15px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    border: 3px solid rgb(0, 208, 255);
+    background-color: white;
+    color: rgb(0, 208, 255);
+    text-decoration: none;
+}
+
+button:hover a {
+    color: rgb(0, 208, 255);
+}
+
+
+/* BMI Result*/
+#result {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+    margin-top: 100px;
+}
+
+.hasil {
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+#body-index {
+    display: none;
+    width: 400px;
+}
+
+#bmi-output {
+    text-align: center;
+    font-size: 70px;
+}
+
+#keterangan {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#range, #penjelasan {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* Footer Styles*/
+footer {
+    background-color: #555;
+    padding: 30px;
+}
+
+footer #copyright {
+    color: white;
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+footer .social-media-types {
+    display: flex;
+}
+
+footer .social-media img {
+    width: 18px;
+    height: fit-content;
+    filter: invert(99%) sepia(7%) saturate(2%) hue-rotate(72deg) brightness(107%) contrast(100%);
+    margin-right: 5px;
+}
+
+footer .social-media p {
+    color: white;
+    font-size: 13px;
+}
+
+footer .social-media p a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Responsive for Desktop */
+@media screen and (min-width: 768px) {
+    /* Header Styles */
+    header {
+        padding: 100px 80px;
+    }
+
+    header h1 {
+        margin-bottom: 50px;
+        color: white;
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    header p {
+        width: 40%;
+        font-size: 17px;
+    }
+
+
+    /* Keunggulan Fitur */
+    main article ol {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main article p.note {
+        line-height: 1.8rem;
+        font-size: 18px;
+    }
+
+    
+    /* Form Styles */
+    form {
+        width: 45%;
+    }
+
+    form .sex-option label .image {
+        display: flex;
+        align-items: center;
+    }
+
+    form .sex-option label .image img {
+        width: 80px;
+        margin: 10px 15px;
+    }
+
+    #body-index {
+        width: 600px;
+    }
+
+
+    /* Footer Styles */
+    footer {
+        display: flex;
+        justify-content: space-around;
+        background-color: #555;
+        padding: 30px;
+    }
+
+    footer #copyright {
+        color: white;
+        flex: 1;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    footer .social-media img {
+        width: 30px;
+        filter: invert(99%) sepia(7%) saturate(2%) hue-rotate(72deg) brightness(107%) contrast(100%);
+        margin-right: 10px;
+        margin-right: 10px;
+    }
+
+    footer .social-media p {
+        color: white;
+        font-size: 16px;
+    }
+}
