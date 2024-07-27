@@ -201,7 +201,7 @@ button:hover a {
 
 #body-index {
     display: none;
-    width: 400px;
+    width: 210%;
 }
 
 #bmi-output {
@@ -242,6 +242,7 @@ footer .social-media {
 
 footer .social-media-types {
     display: flex;
+    align-items: center;
 }
 
 footer .social-media img {
@@ -331,7 +332,7 @@ footer .social-media p a {
     }
 
     footer .social-media img {
-        width: 30px;
+        width: 25px;
         filter: invert(99%) sepia(7%) saturate(2%) hue-rotate(72deg) brightness(107%) contrast(100%);
         margin-right: 10px;
         margin-right: 10px;
