@@ -24,6 +24,7 @@ header {
     background-attachment: scroll;
     height: 450px;
     padding: 100px 50px;
+    width: 100%;
 }
 
 header h1 {
@@ -35,8 +36,8 @@ header h1 {
 
 header p {
     color: white;
-    width: 80%;
     font-size: 0.8rem;
+    line-height: 1.2rem;
 }
 
 
@@ -67,12 +68,13 @@ main article ol li {
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 
 /* Feature Animation */
 main article ol li:hover {
-    transform: scale(1.12);
+    transform: scale(1.08);
     transition: all .2s ease-in-out;
 }
 
@@ -137,6 +139,7 @@ input[type=radio]:checked + .image {
 
 input[type=text] {
     width: 100%;
+    /* max-width: 425px; */
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -149,6 +152,7 @@ input[type=text] {
 input[type=text]:focus {
     border: 3px solid #555;
 }
+
 
 button {
     padding: 10px 23px;
@@ -236,7 +240,7 @@ footer #copyright {
 
 footer .social-media {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex: 1;
 }
 
@@ -245,60 +249,58 @@ footer .social-media-types {
     align-items: center;
 }
 
-footer .social-media img {
+footer .social-media .social-media-types img {
     width: 18px;
     height: fit-content;
     filter: invert(99%) sepia(7%) saturate(2%) hue-rotate(72deg) brightness(107%) contrast(100%);
     margin-right: 5px;
 }
 
-footer .social-media p {
+footer .social-media .social-media-types p {
     color: white;
-    font-size: 13px;
+    font-size: 12px;
 }
 
-footer .social-media p a {
+footer .social-media .social-media-types p a {
     text-decoration: none;
     color: white;
 }
 
+footer .social-media .social-media-types p#instagram-name:hover {
+    text-decoration: underline;
+}
 
 
-/* Responsive for Desktop */
-@media screen and (min-width: 768px) {
-    /* Header Styles */
+
+/* Responsive for Tablet */
+@media screen and (min-width: 600px) {
+    /* Header Style */
     header {
         padding: 100px 80px;
     }
 
     header h1 {
-        margin-bottom: 50px;
-        color: white;
-        font-weight: 700;
-        font-size: 50px;
+        margin-bottom: 30px;
+        font-size: 40px;
     }
 
     header p {
-        width: 40%;
-        font-size: 17px;
+        max-width: 90%;
+        font-size: 0.95rem;
+        line-height: 1.4rem;
     }
-
 
     /* Keunggulan Fitur */
-    main article ol {
+    main article ol li {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
     }
 
-    main article p.note {
-        line-height: 1.8rem;
-        font-size: 18px;
-    }
 
-    
     /* Form Styles */
     form {
-        width: 45%;
+        width: 70%;
     }
 
     form .sex-option label .image {
@@ -317,29 +319,103 @@ footer .social-media p a {
 
 
     /* Footer Styles */
+    footer .social-media .social-media-types p {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
+/* Responsive for Desktop */
+@media screen and (min-width: 780px) {
+    /* Header Styles */
+    header {
+        padding: 100px 80px;
+    }
+
+    header h1 {
+        margin-bottom: 50px;
+        color: white;
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    header p {
+        max-width: 60%;
+        font-size: 15px;
+        line-height: 1.5rem;
+    }
+
+
+    /* Keunggulan Fitur */
+    main article ol {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main article ol li {
+        width: 30%;
+    }
+
+    main article p.note {
+        line-height: 1.8rem;
+        font-size: 18px;
+    }
+
+    
+    /* Form Styles */
+    form {
+        width: 50%;
+    }
+
+    form .sex-option label .image {
+        display: flex;
+        align-items: center;
+    }
+
+    form .sex-option label .image img {
+        width: 80px;
+        margin: 10px 15px;
+    }
+
+    #body-index {
+        width: 600px;
+    }
+
+    
+    /* Footer Styles */
     footer {
         display: flex;
         justify-content: space-around;
         background-color: #555;
         padding: 30px;
     }
-
+    
     footer #copyright {
         color: white;
         flex: 1;
         text-align: center;
         margin-bottom: 0px;
     }
-
+    
     footer .social-media img {
         width: 25px;
         filter: invert(99%) sepia(7%) saturate(2%) hue-rotate(72deg) brightness(107%) contrast(100%);
         margin-right: 10px;
         margin-right: 10px;
     }
-
-    footer .social-media p {
+    
+    footer .social-media .social-media-types p {
         color: white;
-        font-size: 16px;
+        font-size: 13px;
+    }
+}
+
+
+/* Responsive fo Desktop (15 inch) */
+@media screen and (min-width: 1050px) {
+    header p {
+        width: 50%;
     }
 }

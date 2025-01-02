@@ -31,7 +31,7 @@ function process(input) {
       document.getElementById("bmi-output").innerHTML = bmi.toFixed(1);
 
 
-      // Kualification Output
+      // Qualification Output
       if(bmi < 18.5 && (jenisKelamin == 'Pria' || jenisKelamin == 'Wanita')) {
         document.querySelector('#range').innerHTML = "Hasil kurang dari 18.5"
         document.getElementById('keterangan').innerHTML = "Kekurangan Berat Badan";
