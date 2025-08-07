@@ -22,7 +22,7 @@ header {
     border-bottom-left-radius: 170px;
     border-bottom-right-radius: 170px;
     background-attachment: scroll;
-    height: 450px;
+    height: 400px;
     padding: 100px 50px;
     width: 100%;
 }
@@ -61,7 +61,7 @@ main article ol {
 
 main article ol li {
     list-style-type: none;
-    padding: 20px;
+    padding: 15px 20px;
     background-color: rgb(0, 208, 255);
     color: white;
     border-radius: 15px;
@@ -261,15 +261,14 @@ footer .social-media .social-media-types p {
     font-size: 12px;
 }
 
+footer .social-media .social-media-types p:hover {
+    text-decoration: underline;
+}
+
 footer .social-media .social-media-types p a {
     text-decoration: none;
     color: white;
 }
-
-footer .social-media .social-media-types p#instagram-name:hover {
-    text-decoration: underline;
-}
-
 
 
 /* Responsive for Tablet */
